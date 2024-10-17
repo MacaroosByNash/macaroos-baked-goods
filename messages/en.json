@@ -1,7 +1,4 @@
 {
-  "EMAIL": "tara@taranashville.com",
-  "TEL": "+1-206-702-0165",
-  "INSTAGRAM": "@_tara_bakes",
   "NAVBAR": {
     "ABOUT": "About",
     "PRODUCTS": "Products",
@@ -109,6 +106,9 @@
     }
   },
   "CONTACT_SECTION": {
+    "EMAIL": "tara@taranashville.com",
+    "TEL": "+1-206-702-0165",
+    "INSTAGRAM": "@_tara_bakes",
     "NAME": "Get in Touch",
     "TITLE": "Connect With Me",
     "FORM": {

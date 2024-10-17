@@ -5,6 +5,7 @@ import Navbar from "@/components/shared/navbar";
 import Footer from "@/components/shared/footer";
 import { getLocale, getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
+import Contact from "@/components/contact/contact";
 
 const DMSansItalic = localFont({
   src: "./fonts/DMSans-Italic-VariableFont_opsz,wght.ttf",
@@ -51,6 +52,7 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           {children}
+          <Contact />
           <Footer />
         </NextIntlClientProvider>
       </body>
