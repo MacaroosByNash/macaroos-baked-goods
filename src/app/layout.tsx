@@ -6,6 +6,10 @@ import Footer from "@/components/shared/footer";
 import { getLocale, getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import Contact from "@/components/contact/contact";
+import Testimonials from "@/components/testimonials/testimonials";
+
+// Import Swiper styles
+import "swiper/css";
 
 const DMSansItalic = localFont({
   src: "./fonts/DMSans-Italic-VariableFont_opsz,wght.ttf",
@@ -52,6 +56,7 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           {children}
+          <Testimonials />
           <Contact />
           <Footer />
         </NextIntlClientProvider>

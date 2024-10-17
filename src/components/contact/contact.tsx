@@ -22,8 +22,8 @@ export default function Contact() {
           </div>
         </div>
         <div className="lg:w-[48%]">
-          <p className="font-oswald mb-4">{t("NAME")}</p>
-          <h3 className="text-[48px] lg:text-[56px] max-w-xs leading-[48px] lg:leading-[64px]">
+          <p className="font-subHeading mb-4 uppercase">{t("NAME")}</p>
+          <h3 className="text-[40px] lg:text-[56px] max-w-xs leading-[48px] lg:leading-[64px]">
             {t("TITLE")}
           </h3>
 

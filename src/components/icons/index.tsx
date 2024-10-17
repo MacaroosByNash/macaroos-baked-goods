@@ -97,7 +97,7 @@ export const Star = (props: React.SVGProps<SVGSVGElement>) => (
   >
     <path
       d="M12.2891 18L5.23564 21.7082L6.58272 13.8541L0.876384 8.2918L8.76235 7.1459L12.2891 0L15.8158 7.1459L23.7017 8.2918L17.9954 13.8541L19.3425 21.7082L12.2891 18Z"
-      fill="#FFF"
+      fill={props.fill || "#fff"}
     />
   </svg>
 );
