@@ -6,9 +6,9 @@ import { Facebook, InstagramO, Twitter } from "../icons";
 export default function Footer() {
   const { menu, service, social, t } = useFooter();
   return (
-    <footer className="bg-foreground text-white flex items-center justify-center pt-6 lg:pt-16 pb-20 lg:pb-8">
+    <footer className="footer bg-foreground text-white flex items-center justify-center pt-6 lg:pt-16 pb-20 lg:pb-8">
       <div className="container flex flex-col gap-16 px-4 md:px-8">
-        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 justify-between xl:justify-start xl:gap-56">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 justify-between xl:justify-start xl:gap-56">
           <Link href="/">
             <Image
               src="/logo.png"
@@ -21,7 +21,7 @@ export default function Footer() {
           {[menu, service].map((menu) => (
             <div
               key={menu.name}
-              className="flex items-center lg:items-start flex-col gap-6"
+              className="flex items-center lg:items-start flex-col gap-5"
             >
               <h5 className="uppercase">{menu.name}</h5>
               <ul className="flex items-center lg:items-start flex-col gap-4">

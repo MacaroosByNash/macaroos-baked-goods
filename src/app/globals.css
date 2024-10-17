@@ -61,3 +61,16 @@
     @apply font-paragraph;
   }
 }
+
+.footer {
+  background-image: url("../assets/images/blob-line-ten.png"),
+    url("../assets/images/sprinkles-five.png");
+  background-repeat: no-repeat;
+  background-position: 59% 132%, 140% 0%;
+}
+
+@media (min-width: 1280px) {
+  .footer {
+    background-position: 55% 215%, 107% 0%;
+  }
+}
