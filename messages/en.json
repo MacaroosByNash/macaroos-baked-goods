@@ -1,0 +1,240 @@
+{
+  "EMAIL": "tara@taranashville.com",
+  "TEL": "+1-206-702-0165",
+  "INSTAGRAM": "@_tara_bakes",
+  "NAVBAR": {
+    "ABOUT": "About",
+    "PRODUCTS": "Products",
+    "RECIPES": "Recipes",
+    "CONTACT_ME": "Contact Me",
+    "CONTACT": "Contact"
+  },
+  "HOME_HERO": {
+    "SUB_TITLE": "Baked with love",
+    "TITLE": "YES! You came to visit my page!",
+    "DESCRIPTION": "Thanks for stopping by Take a quick look around to see some of our amazing pastries 😊"
+  },
+  "ABOUT_SECTION": {
+    "NAME": "About Us",
+    "TITLE": "Baking Special Moments",
+    "INFO": {
+      "ONE": {
+        "TITLE": "What i do",
+        "DESCRIPTION": "I specialize in a variety of cake-based products, including cupcakes, cookies, bento and larger cakes for events"
+      },
+      "TWO": {
+        "TITLE": "About Pricing",
+        "DESCRIPTION": "The pricing features both standard and specialty offerings, catering to customers with dietary restrictions such as gluten-free, nut-free, dairy free and vegan."
+      },
+      "THREE": {
+        "TITLE": "Our Flavor/Style Options",
+        "DESCRIPTION": "A variety of flavors and styles available. Let me know what your preference is. All flavors and fillings available, there are too many to list so let me know your dream flavor and I’ll make it."
+      }
+    }
+  },
+  "FEATURES_SECTION": {
+    "NAME": "Our Features",
+    "TITLE": "Baked With Love",
+    "DESCRIPTION": "We offer a variety of fresh, natural, and tasty treats",
+    "FEATURES": {
+      "ONE": {
+        "TITLE": "Fresh",
+        "DESCRIPTION": "All orders are baked on demand to make Sure they are as fresh as possible."
+      },
+      "TWO": {
+        "TITLE": "Natural",
+        "DESCRIPTION": "Naturally sourced ingredients to keep our customers healthy. "
+      },
+      "THREE": {
+        "TITLE": "Tasty",
+        "DESCRIPTION": "Taste the yummy goodness in all of our pastries."
+      }
+    }
+  },
+  "STORY_SECTION": {
+    "NAME": "Home Made For you",
+    "TITLE": "Story Behind, Every Piece"
+  },
+  "OUR_PRODUCTS_SECTION": {
+    "NAME": "Our Products",
+    "TITLE": "Every Order Baked Fresh",
+    "BUTTON": "See more"
+  },
+  "PROCESS_SECTION": {
+    "NAME": "Our Process",
+    "TITLE": "How We Work",
+    "DESCRIPTION": "You can order your favorite pastries in 4 simple steps",
+    "STEPS": {
+      "ONE": {
+        "TITLE": "Contact",
+        "DESCRIPTION": "Place your order through mail, Instagram or the contact provided. "
+      },
+      "TWO": {
+        "TITLE": "Baking",
+        "DESCRIPTION": "Your order is received and the magic starts right after. "
+      },
+      "THREE": {
+        "TITLE": "Delivery",
+        "DESCRIPTION": "I Send over your order to your preferred location specified "
+      },
+      "FOUR": {
+        "TITLE": "Tasty",
+        "DESCRIPTION": "Enjoy the freshly baked tasty Goodness"
+      }
+    }
+  },
+  "TESTIMONIALS": {
+    "NAME": "Testimonials",
+    "TITLE": "People Say About The Product",
+    "DESCRIPTION": "See what our satisfied customers have to say about our product",
+    "TESTIMONIALS": {
+      "ONE": {
+        "NAME": "Olivia",
+        "TITLE": "The cake was a huge hit!",
+        "DESCRIPTION": "Everyone loved it and the swirl buttercream inside was such a beautiful surprise. It looked amazing. Thank you so much.",
+        "STARS": "4"
+      },
+      "TWO": {
+        "NAME": "Tamara",
+        "TITLE": "My Grandmother loved the mini pink 3 tiered cake",
+        "DESCRIPTION": "It was perfect. I could tell she felt special. Thank you so much for designing something just for us.",
+        "STARS": "5"
+      },
+      "THREE": {
+        "NAME": "Annie",
+        "TITLE": "OMG Tara!!!",
+        "DESCRIPTION": "Holly smokes that was the best party cake i’ve ever had. WOW!!! only problem is everyone is eating it and i want the left overs",
+        "STARS": "5"
+      }
+    }
+  },
+  "CONTACT_SECTION": {
+    "NAME": "Get in Touch",
+    "TITLE": "Connect With Me",
+    "FORM": {
+      "NAME": {
+        "LABEL": "Name",
+        "PLACEHOLDER": "Your name here"
+      },
+      "EMAIL": {
+        "LABEL": "Email",
+        "PLACEHOLDER": "Your email here"
+      },
+      "MESSAGE": {
+        "LABEL": "Enquiry Request ",
+        "PLACEHOLDER": "Please include as much detail as possible"
+      },
+      "DATE": {
+        "LABEL": "Date required by",
+        "PLACEHOLDER": "Add date"
+      },
+      "QUANTITY": {
+        "LABEL": "Quantity",
+        "PLACEHOLDER": "Add quantity"
+      },
+      "BUTTON": "Send"
+    }
+  },
+  "FOOTER": {
+    "MENU_SECTION": {
+      "NAME": "MENU",
+      "MENU": {
+        "ABOUT": "About",
+        "PRODUCTS": "Products",
+        "RECIPES": "Recipes",
+        "CONTACT": "Contact"
+      }
+    },
+    "SERVICES_SECTION": {
+      "NAME": "SERVICES",
+      "SERVICES": {
+        "BAKERY": "Bakery",
+        "DELIVERY": "Delivery",
+        "CATERING": "Catering",
+        "CORPORATE": "Corporate"
+      }
+    },
+    "SOCIAL_SECTION": {
+      "NAME": "Social"
+    },
+    "COPYRIGHT": "Copyright © 2024 Macaroos. All Rights Reserved.",
+    "TERMS": "Terms of Use",
+    "PRIVACY": "Privacy Policy"
+  },
+  "PRODUCTS": {
+    "NAME": "Our Products",
+    "TITLE": "Every Order Baked Fresh",
+    "DESCRIPTION": "We offer a variety of fresh, natural, and tasty treats"
+  },
+  "ALL_PRODUCTS": {
+    "ONE": {
+      "NAME": "Cake",
+      "TITLE": "Cupcake 12",
+      "DESCRIPTION": "Add Filling $10 Per Dozwn",
+      "PRICE": "30"
+    },
+    "TWO": {
+      "NAME": "Cake",
+      "TITLE": "V/GF Cupcakes 12",
+      "DESCRIPTION": "Add Filling $10 Per Dozwn",
+      "PRICE": "36"
+    },
+    "THREE": {
+      "NAME": "Cake",
+      "TITLE": "Cake with Filling",
+      "INFO": {
+        "ONE": "2 Layers",
+        "TWO": "10+ Servings"
+      },
+      "DESCRIPTION": "add a custom cookie cake topper for {price}",
+      "PRICE": "65"
+    },
+    "FOUR": {
+      "NAME": "Cake",
+      "TITLE": "Cake with Filling",
+      "INFO": {
+        "ONE": "3 Layers",
+        "TWO": "15+ Servings"
+      },
+      "PRICE": "85"
+    },
+    "FIVE": {
+      "NAME": "Cake",
+      "TITLE": "2 tier cake with filling",
+      "INFO": {
+        "ONE": "35+ Servings"
+      },
+      "DESCRIPTION": "customized with 2 cake flavors {price}",
+      "PRICE": "130"
+    },
+    "SIX": {
+      "NAME": "Cookies",
+      "TITLE": "Custom theme shortbread Melts",
+      "DESCRIPTION": "price varies depending on detail",
+      "INFO": {
+        "ONE": "available in V/GF"
+      },
+      "PRICE": "70",
+      "UNIT": "Per Dozen"
+    },
+    "SEVEN": {
+      "NAME": "Cake",
+      "TITLE": "12 large frosted brownies servings",
+      "INFO": {
+        "ONE": "added homemade caramel filling $65"
+      },
+      "PRICE": "52",
+      "UNIT": "Per Dozen",
+      "DESCRIPTION": "available in Gluten free"
+    },
+    "EIGHT": {
+      "NAME": "Macarons",
+      "TITLE": "Macarons",
+      "INFO": {
+        "ONE": "Sold as a variety of flavors "
+      },
+      "PRICE": "56",
+      "DESCRIPTION": "min order of 24"
+    }
+  }
+}
