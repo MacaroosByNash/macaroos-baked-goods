@@ -9,6 +9,7 @@ import avatarOne from "@/assets/images/avatar-one.png";
 import avatarTwo from "@/assets/images/avatar-two.png";
 import avatarThree from "@/assets/images/avatar-three.png";
 import MySwiper from "../shared/swiper";
+import Heading from "../shared/heading";
 
 export default function Testimonials() {
   const { t, testimonials } = useTestimonials();
@@ -25,10 +26,7 @@ export default function Testimonials() {
   return (
     <section className="flex items-center justify-center pt-28 lg:pt-40 px-4 lg:px-8">
       <div className="container flex flex-col items-center overflow-x-hidden">
-        <p className="font-oswald mb-4 uppercase text-center">{t("NAME")}</p>
-        <h3 className="text-[40px] lg:text-[56px] text-center max-w-[617px] leading-[48px] lg:leading-[64px]">
-          {t("TITLE")}
-        </h3>
+        <Heading title={t("TITLE")} name={t("NAME")} center />
         <MySwiper setActiveSlide={setActiveSlide} slidesPerView={slidesPerView}>
           {testimonials.map((testimonial, index) => (
             <SwiperSlide

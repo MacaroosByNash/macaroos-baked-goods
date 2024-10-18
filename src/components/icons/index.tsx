@@ -177,3 +177,16 @@ export const Email = (props: React.SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
+
+export const PlayIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    width="24"
+    height="30"
+    viewBox="0 0 24 30"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path d="M24 15L0 30L0 0L24 15Z" fill="#F5AE5C" />
+  </svg>
+);

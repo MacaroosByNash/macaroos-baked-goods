@@ -102,12 +102,26 @@ input[type="number"] {
     url("../assets/images/blob-line-seven.png"),
     url("../assets/images/blob-line-eight.png");
   background-repeat: no-repeat;
-  background-position: 19% 13%, 6% 32%, 15% 35%;
+  background-position: 111% 114%, -7% -36%, 144% 124%;
 }
 
 @media (min-width: 1280px) {
   .process_section {
     background-position: 104% 83%, -6% 32%, 112% 85%;
+  }
+}
+
+.story_section {
+  background-image: url("../assets/images/sprinkles-three.png"),
+    url("../assets/images/blob-line-five.png"),
+    url("../assets/images/blob-line-six.png");
+  background-repeat: no-repeat;
+  background-position: 33% 13%, 119% -38%, 36% 132%;
+}
+
+@media (min-width: 1280px) {
+  .story_section {
+    background-position: 13% 14%, 109% -31%, 48% 137%;
   }
 }
 
@@ -130,4 +144,12 @@ input[type="number"] {
     transform: scale(1.1) !important;
     z-index: 10;
   }
+}
+
+.image_gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 31%,
+    rgba(0, 0, 0, 0.5) 72%
+  );
 }

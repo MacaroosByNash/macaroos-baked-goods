@@ -6,6 +6,7 @@ import useSlidesPerVIew from "@/hooks/useSlidesPerView";
 import { SwiperSlide } from "swiper/react";
 import { cn } from "@/lib/utils";
 import ProcessCard from "./process-card";
+import Heading from "../shared/heading";
 
 export default function HowWeWork() {
   const { t, process } = useHowItWorks();
@@ -13,13 +14,9 @@ export default function HowWeWork() {
   const slidesPerView = useSlidesPerVIew(4);
 
   return (
-    <section className="process_section bg-primary flex items-center justify-center py-28 lg:py-40 px-4 lg:px-8">
-      <div className="container flex flex-col items-center text-white overflow-hidden">
-        <p className="font-oswald mb-4 uppercase text-center">{t("NAME")}</p>
-        <h3 className="text-[40px] lg:text-[56px] text-center max-w-[617px] leading-[48px] lg:leading-[64px]">
-          {t("TITLE")}
-        </h3>
-        <div></div>
+    <section className="process_section bg-primary flex items-center justify-center py-24 lg:py-36 px-4 lg:px-8">
+      <div className="container flex flex-col items-center text-white overflow-hidden py-8">
+        <Heading name={t("NAME")} title={t("TITLE")} center />
         <MySwiper setActiveSlide={setActiveSlide} slidesPerView={slidesPerView}>
           {process.map((step, index) => (
             <SwiperSlide

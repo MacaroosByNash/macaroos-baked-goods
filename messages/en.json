@@ -169,43 +169,43 @@
   "ALL_PRODUCTS": {
     "ONE": {
       "NAME": "Cake",
-      "TITLE": "Cupcake 12",
-      "DESCRIPTION": "Add Filling $10 Per Dozwn",
-      "PRICE": "30"
+      "TITLE": "Cupcake {amount}",
+      "DESCRIPTION": "Add Filling ${price} Per Dozen",
+      "PRICE": "${price}"
     },
     "TWO": {
       "NAME": "Cake",
-      "TITLE": "V/GF Cupcakes 12",
-      "DESCRIPTION": "Add Filling $10 Per Dozwn",
-      "PRICE": "36"
+      "TITLE": "V/GF Cupcakes {amount}",
+      "DESCRIPTION": "Add Filling ${price} Per Dozen",
+      "PRICE": "${price}"
     },
     "THREE": {
       "NAME": "Cake",
       "TITLE": "Cake with Filling",
       "INFO": {
-        "ONE": "2 Layers",
-        "TWO": "10+ Servings"
+        "ONE": "{layers} Layers",
+        "TWO": "{servings}+ Servings"
       },
-      "DESCRIPTION": "add a custom cookie cake topper for {price}",
-      "PRICE": "65"
+      "DESCRIPTION": "add a custom cookie cake topper for ${price}",
+      "PRICE": "${price}"
     },
     "FOUR": {
       "NAME": "Cake",
       "TITLE": "Cake with Filling",
       "INFO": {
-        "ONE": "3 Layers",
-        "TWO": "15+ Servings"
+        "ONE": "{layers} Layers",
+        "TWO": "{servings}+ Servings"
       },
-      "PRICE": "85"
+      "PRICE": "${price}"
     },
     "FIVE": {
       "NAME": "Cake",
-      "TITLE": "2 tier cake with filling",
+      "TITLE": "{tier} tier cake with filling",
       "INFO": {
-        "ONE": "35+ Servings"
+        "ONE": "{servings}+ Servings"
       },
-      "DESCRIPTION": "customized with 2 cake flavors {price}",
-      "PRICE": "130"
+      "DESCRIPTION": "customized with 2 cake flavors ${price}",
+      "PRICE": "${price}"
     },
     "SIX": {
       "NAME": "Cookies",
@@ -214,17 +214,18 @@
       "INFO": {
         "ONE": "available in V/GF"
       },
-      "PRICE": "70",
+      "PRICE": "${price}",
       "UNIT": "Per Dozen"
     },
     "SEVEN": {
       "NAME": "Cake",
-      "TITLE": "12 large frosted brownies servings",
+      "TITLE": "{amount} large frosted brownies servings",
       "INFO": {
-        "ONE": "added homemade caramel filling $65"
+        "ONE": "added homemade caramel filling ${price}"
       },
-      "PRICE": "52",
+
       "UNIT": "Per Dozen",
+      "PRICE": "${price}",
       "DESCRIPTION": "available in Gluten free"
     },
     "EIGHT": {
@@ -233,8 +234,8 @@
       "INFO": {
         "ONE": "Sold as a variety of flavors "
       },
-      "PRICE": "56",
-      "DESCRIPTION": "min order of 24"
+      "PRICE": "${price}",
+      "DESCRIPTION": "min order of {minOrder}"
     }
   }
 }
