@@ -14,7 +14,7 @@ export default function HowWeWork() {
   const slidesPerView = useSlidesPerVIew(4);
 
   return (
-    <section className="process_section bg-primary flex items-center justify-center py-24 lg:py-36 px-4 lg:px-8">
+    <section className="process_section bg-primary flex items-center justify-center py-24 lg:py-36 px-4 md:px-8">
       <div className="container flex flex-col items-center text-white overflow-hidden py-8">
         <Heading name={t("NAME")} title={t("TITLE")} center />
         <MySwiper setActiveSlide={setActiveSlide} slidesPerView={slidesPerView}>

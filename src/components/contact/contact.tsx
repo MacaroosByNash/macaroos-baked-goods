@@ -8,7 +8,10 @@ import Heading from "../shared/heading";
 export default function Contact() {
   const { t, formFields } = useContact();
   return (
-    <section className="contact__section flex items-center justify-center py-28 lg:py-40 px-4 lg:px-8">
+    <section
+      id="contact"
+      className="contact__section flex items-center justify-center py-28 lg:py-40 px-4 md:px-8"
+    >
       <div className="container flex flex-col lg:flex-row gap-10 lg:justify-between">
         <div className="lg:w-[48%] flex flex-col md:items-center lg:items-start gap-10">
           <Image
@@ -23,7 +26,9 @@ export default function Contact() {
           </div>
         </div>
         <div className="lg:w-[48%]">
-          <Heading title={t("TITLE")} name={t("NAME")} />
+          <div className="max-w-[300px]">
+            <Heading title={t("TITLE")} name={t("NAME")} />
+          </div>
           <form
             action=""
             className="mt-10 mb-32 lg:mb-0 flex flex-col gap-7 lg:gap-5"

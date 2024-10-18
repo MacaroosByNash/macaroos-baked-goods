@@ -6,8 +6,8 @@ import { Facebook, InstagramO, Twitter } from "../icons";
 export default function Footer() {
   const { menu, service, social, t } = useFooter();
   return (
-    <footer className="footer bg-foreground text-white flex items-center justify-center pt-6 lg:pt-16 pb-20 lg:pb-8">
-      <div className="container flex flex-col gap-16 px-4 md:px-8">
+    <footer className="footer bg-foreground text-white flex items-center justify-center pt-6 lg:pt-16 pb-20 lg:pb-8 px-4 md:px-8">
+      <div className="container flex flex-col gap-16">
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 justify-between xl:justify-start xl:gap-56">
           <Link href="/">
             <Image

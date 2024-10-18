@@ -24,7 +24,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="flex items-center justify-center pt-28 lg:pt-40 px-4 lg:px-8">
+    <section className="flex items-center justify-center pt-28 lg:pt-40 px-4 md:px-8">
       <div className="container flex flex-col items-center overflow-x-hidden">
         <Heading title={t("TITLE")} name={t("NAME")} center />
         <MySwiper setActiveSlide={setActiveSlide} slidesPerView={slidesPerView}>

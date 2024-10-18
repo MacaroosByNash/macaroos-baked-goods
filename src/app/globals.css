@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -138,6 +142,30 @@ input[type="number"] {
       url("../assets/images/blob-two.png");
     background-repeat: no-repeat;
     background-position: 83% 5%, 89% 98%;
+  }
+}
+
+.navbar_section {
+  background-image: url("../assets/images/blob-line-one.png");
+  background-repeat: no-repeat;
+  background-position: 65% 187%;
+}
+
+.home_hero_section {
+  background-image: url("../assets/images/blob-line-three.png"),
+    url("../assets/images/blob-line-four.png"),
+    url("../assets/images/sprinkles.png"),
+    url("../assets/images/cake-basket-with-cream-and-lemon.webp"),
+    url("../assets/images/blob-line-two.png"),
+    url("../assets/images/blob-one.png");
+  background-repeat: no-repeat;
+  background-size: 70%, 70%, 30%, 70%, 70%, 70%;
+  background-position: 64% 116%, 44% -44%, 9% 11%, 24% -2%, 97% 8%, 23% 18%;
+}
+
+@media (min-width: 1280px) {
+  .home_hero_section {
+    background-position: 112% 50%, 53% 112%, 55% 12%, 64% 0%, 83% 16%, 66% 30%;
   }
 }
 

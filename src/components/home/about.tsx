@@ -19,7 +19,7 @@ export default function About() {
     .map((info) => <p key={info.title}>{info.title}</p>);
 
   return (
-    <section className="flex items-center justify-center pt-28 lg:pt-40 px-4 lg:px-8">
+    <section className="flex items-center justify-center pt-28 lg:pt-40 px-4 md:px-8">
       <div className="container flex flex-col lg:flex-row justify-between lg:gap-0">
         <div className="special_image lg:w-[48%] relative min-h-[464px] lg:min-h-[620px]">
           <div className="w-[230px] h-[230px] md:w-[370px] md:h-[320px]">

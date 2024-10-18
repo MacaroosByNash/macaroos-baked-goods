@@ -4,14 +4,14 @@ export const ArrowDown = (props: React.SVGProps<SVGSVGElement>) => (
     width="22"
     height="23"
     viewBox="0 0 22 23"
-    fill="none"
+    fill="currentColor"
     {...props}
   >
     <path
       fill-rule="evenodd"
       clip-rule="evenodd"
       d="M21.5469 11.791L20.4422 10.6789L11.7797 19.3414L11.7797 0.453125L10.2203 0.453125L10.2203 19.3414L1.55781 10.6789L0.453125 11.791L11 22.3281L21.5469 11.791Z"
-      fill="#F5AE5C"
+      fill="currentColor"
     />
   </svg>
 );

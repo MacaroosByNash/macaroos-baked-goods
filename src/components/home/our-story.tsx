@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 export default function OurStory() {
   const t = useTranslations("STORY_SECTION");
   return (
-    <section className="story_section bg-primary flex items-center justify-center py-28 lg:py-40 px-4 lg:px-8">
+    <section className="story_section bg-primary flex items-center justify-center py-28 lg:py-40 px-4 md:px-8">
       <div className="container flex flex-col lg:flex-row lg:items-center justify-between text-white">
         <div>
           <video src=""></video>

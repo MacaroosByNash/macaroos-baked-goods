@@ -17,7 +17,7 @@ export default function Features() {
   const slidesPerView = useSlidesPerVIew(3);
 
   return (
-    <section className="flex items-center justify-center py-24 lg:py-36 px-4 lg:px-8">
+    <section className="flex items-center justify-center py-24 lg:py-36 px-4 md:px-8">
       <div className="container flex flex-col items-center py-8 overflow-hidden">
         <Heading name={t("NAME")} title={t("TITLE")} center />
         <MySwiper setActiveSlide={setActiveSlide} slidesPerView={slidesPerView}>

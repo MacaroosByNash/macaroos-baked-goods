@@ -14,12 +14,12 @@ export default function BurgerButton({
       className="z-10 bg-secondary lg:hidden w-12 h-12 rounded-full flex flex-col items-center justify-center"
       onClick={handleClick}
     >
-      <div className="w-6 h-6 flex flex-col gap-2 items-center justify-center">
+      <div className="w-6 h-6 flex flex-col gap-[5px] items-center justify-center">
         <div
           className={cn(
             "block w-full h-[2px] rounded-full bg-white transition-all",
             {
-              "rotate-45 translate-y-[10px]": showNav,
+              "rotate-45 translate-y-[8px]": showNav,
             }
           )}
         />
@@ -30,7 +30,7 @@ export default function BurgerButton({
         />
         <div
           className={cn("block w-full h-[2px] bg-white transition-all", {
-            "-rotate-45 translate-y-[-10px]": showNav,
+            "-rotate-45 translate-y-[-6px]": showNav,
           })}
         />
       </div>
