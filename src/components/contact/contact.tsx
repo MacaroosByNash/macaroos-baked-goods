@@ -3,30 +3,27 @@ import fairyFloss from "@/assets/images/fairy-floss.webp";
 import { useTranslations } from "next-intl";
 import Socials from "./socials";
 import { Button } from "../ui/button";
+import Heading from "../shared/heading";
 
 export default function Contact() {
   const { t, formFields } = useContact();
   return (
     <section className="contact__section flex items-center justify-center py-28 lg:py-40 px-4 lg:px-8">
       <div className="container flex flex-col lg:flex-row gap-10 lg:justify-between">
-        <div className="lg:w-[48%] flex flex-col gap-10">
+        <div className="lg:w-[48%] flex flex-col md:items-center lg:items-start gap-10">
           <Image
             src={fairyFloss}
             alt="our stand"
             width={470}
             height={624}
-            className="w-[300px] h-[400px] lg:w-[470px] lg:h-[624px]"
+            className="w-[300px] md:w-1/2 h-[400px] lg:w-[470px] lg:h-[624px]"
           />
           <div className="hidden lg:block">
             <Socials />
           </div>
         </div>
         <div className="lg:w-[48%]">
-          <p className="font-subHeading mb-4 uppercase">{t("NAME")}</p>
-          <h3 className="text-[40px] lg:text-[56px] max-w-xs leading-[48px] lg:leading-[64px]">
-            {t("TITLE")}
-          </h3>
-
+          <Heading title={t("TITLE")} name={t("NAME")} />
           <form
             action=""
             className="mt-10 mb-32 lg:mb-0 flex flex-col gap-7 lg:gap-5"

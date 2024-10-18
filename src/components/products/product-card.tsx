@@ -11,7 +11,7 @@ export default function ProductCard({ product, index }: ProductCardProps) {
   return (
     <div
       className={cn("image_gradient relative flex flex-col", {
-        "col-span-2": isFirst,
+        "md:col-span-2 min-h-[348px]": isFirst,
       })}
     >
       <Image
@@ -29,11 +29,15 @@ export default function ProductCard({ product, index }: ProductCardProps) {
         })}
       >
         <p className="uppercase font-subHeading">{product.name}</p>
-        <div className="flex justify-between">
+        <div
+          className={cn("flex justify-between", {
+            "flex-col": isFirst,
+          })}
+        >
           <div className="flex flex-col gap-2">
             <p
-              className={cn("text-xl font-subHeading", {
-                "font-heading text-[40px]": isFirst,
+              className={cn("text-xl font-subHeading leading-[48px]", {
+                "font-heading text-[40px] leading-[48px]": isFirst,
               })}
             >
               {product.title}
@@ -60,7 +64,13 @@ export default function ProductCard({ product, index }: ProductCardProps) {
               </p>
             )}
           </div>
-          <p className="text-[40px] font-heading">{product.price}</p>
+          <p
+            className={cn("text-[40px] font-heading", {
+              "self-end": isFirst,
+            })}
+          >
+            {product.price}
+          </p>
         </div>
       </div>
     </div>

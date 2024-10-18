@@ -8,7 +8,7 @@ export default function useSlidesPerVIew(slides: number) {
       if (window.innerWidth > 1024) {
         setSlidesPerView(slides);
       } else if (window.innerWidth > 768) {
-        setSlidesPerView(slides - 1);
+        setSlidesPerView(slides - 2);
       } else {
         setSlidesPerView(1);
       }
