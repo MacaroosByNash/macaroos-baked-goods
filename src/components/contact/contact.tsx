@@ -4,16 +4,22 @@ import { useTranslations } from "next-intl";
 import Socials from "./socials";
 import { Button } from "../ui/button";
 import Heading from "../shared/heading";
+import * as motion from "framer-motion/client";
 
 export default function Contact() {
   const { t, formFields } = useContact();
   return (
     <section
       id="contact"
-      className="contact__section flex items-center justify-center py-28 lg:py-40 px-4 md:px-8"
+      className="contact__section flex items-center justify-center py-28 lg:py-40 px-4 md:px-8 overflow-x-hidden"
     >
       <div className="container flex flex-col lg:flex-row gap-10 lg:justify-between">
-        <div className="lg:w-[48%] flex flex-col md:items-center lg:items-start gap-10">
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+          className="lg:w-[48%] flex flex-col md:items-center lg:items-start gap-10"
+        >
           <Image
             src={fairyFloss}
             alt="our stand"
@@ -24,17 +30,26 @@ export default function Contact() {
           <div className="hidden lg:block">
             <Socials />
           </div>
-        </div>
+        </motion.div>
         <div className="lg:w-[48%]">
           <div className="max-w-[300px]">
-            <Heading title={t("TITLE")} name={t("NAME")} />
+            <Heading title={t("TITLE")} name={t("NAME")} direction="right" />
           </div>
           <form
             action=""
             className="mt-10 mb-32 lg:mb-0 flex flex-col gap-7 lg:gap-5"
           >
             {formFields.map((field) => (
-              <fieldset key={field.name} className="flex flex-col gap-2">
+              <motion.fieldset
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 0.5,
+                  delay: 0.2 * formFields.indexOf(field),
+                }}
+                key={field.name}
+                className="flex flex-col gap-2"
+              >
                 <label
                   htmlFor={field.name}
                   className="text-2xl font-subHeading"
@@ -56,14 +71,20 @@ export default function Contact() {
                     className="bg-transparent border-b-2 font-light font-subHeading text-left text-primary border-b-input py-2 outline-none focus:border-border text-2xl"
                   />
                 )}
-              </fieldset>
+              </motion.fieldset>
             ))}
-            <Button
-              type="submit"
-              className="border-[#171B1B3D] text-white rounded-none p-4 w-[170px] uppercase h-auto self-start mt-5"
+            <motion.fieldset
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 * formFields.length }}
             >
-              {t("FORM.BUTTON")}
-            </Button>
+              <Button
+                type="submit"
+                className="border-[#171B1B3D] text-white rounded-none p-4 w-[170px] uppercase h-auto self-start mt-5"
+              >
+                {t("FORM.BUTTON")}
+              </Button>
+            </motion.fieldset>
           </form>
           <div className="lg:hidden">
             <Socials />

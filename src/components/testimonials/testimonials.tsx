@@ -18,16 +18,23 @@ export default function Testimonials() {
   const slidesPerView = useSlidesPerVIew(3);
 
   const handleDotClick = (index: number) => {
+    console.log(swiperRef);
+
     if (swiperRef.current && swiperRef.current.swiper) {
+      console.log(swiperRef.current);
       swiperRef.current.swiper.slideToLoop(index);
     }
   };
 
   return (
     <section className="flex items-center justify-center pt-28 lg:pt-40 px-4 md:px-8">
-      <div className="container flex flex-col items-center overflow-x-hidden">
-        <Heading title={t("TITLE")} name={t("NAME")} center />
-        <MySwiper setActiveSlide={setActiveSlide} slidesPerView={slidesPerView}>
+      <div className="container flex flex-col items-center overflow-hidden">
+        <Heading title={t("TITLE")} name={t("NAME")} center direction="up" />
+        <MySwiper
+          swiperRef={swiperRef}
+          setActiveSlide={setActiveSlide}
+          slidesPerView={slidesPerView}
+        >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide
               key={index}
@@ -46,11 +53,11 @@ export default function Testimonials() {
             .fill(0)
             .map((_, index) => (
               <button
+                key={index}
                 onClick={() => handleDotClick(index)}
                 className={cn("w-2 h-2 rounded-full bg-[#9EAD8D]", {
                   "bg-primary w-4 h-4": index === activeSlide,
                 })}
-                key={index}
               />
             ))}
         </div>

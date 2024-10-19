@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import BurgerButton from "../ui/burger-button";
+import { motion } from "framer-motion";
 
 const SCROLL_THRESHOLD = 600;
 
@@ -43,15 +44,20 @@ export default function Navbar() {
             )}
           >
             <ul className="flex lg:items-center gap-8 lg:flex-row flex-col mt-36 lg:mt-0">
-              {navLinks.map((link) => (
-                <li key={link.href}>
+              {navLinks.map((link, index) => (
+                <motion.li
+                  key={link.href}
+                  initial={{ opacity: 0, y: -100 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.1 * index, duration: 0.5 }}
+                >
                   <Link
                     href={link.href}
                     className="text-secondary lg:text-white font-heading lg:font-subHeading text-2xl lg:text-base"
                   >
                     {link.title}
                   </Link>
-                </li>
+                </motion.li>
               ))}
             </ul>
           </nav>

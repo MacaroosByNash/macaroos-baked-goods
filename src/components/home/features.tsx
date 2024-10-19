@@ -19,7 +19,7 @@ export default function Features() {
   return (
     <section className="flex items-center justify-center py-24 lg:py-36 px-4 md:px-8">
       <div className="container flex flex-col items-center py-8 overflow-hidden">
-        <Heading name={t("NAME")} title={t("TITLE")} center />
+        <Heading name={t("NAME")} title={t("TITLE")} center direction="up" />
         <MySwiper setActiveSlide={setActiveSlide} slidesPerView={slidesPerView}>
           {features.map((feature, index) => (
             <SwiperSlide

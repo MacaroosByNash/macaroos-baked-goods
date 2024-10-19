@@ -10,6 +10,7 @@ import tier from "@/assets/images/tier-cake.webp";
 import shortbread from "@/assets/images/shortbread.webp";
 import fillingCake from "@/assets/images/filling-cake.webp";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function About() {
   const { t, about, controls, activeSlide, setActiveSlide } = useAbout();
@@ -29,10 +30,15 @@ export default function About() {
   return (
     <section
       id="about"
-      className="flex items-center justify-center pt-28 lg:pt-40 px-4 md:px-8"
+      className="flex items-center justify-center pt-28 lg:pt-40 px-4 md:px-8 overflow-hidden"
     >
       <div className="container flex flex-col lg:flex-row justify-between lg:gap-0">
-        <div className="special_image lg:w-[48%] relative min-h-[464px] lg:min-h-[620px]">
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+          className="special_image lg:w-[48%] relative min-h-[464px] lg:min-h-[620px]"
+        >
           <div className="w-[230px] h-[230px] md:w-[370px] md:h-[320px]">
             <Image
               src={activeAbout.image}
@@ -50,27 +56,37 @@ export default function About() {
             height={400}
             className="absolute right-14 bottom-20 md:bottom-14 w-[230px] h-[230px] md:w-[370px] md:h-[320px]"
           />
-        </div>
+        </motion.div>
         <div className="lg:w-[48%]">
-          <Heading name={t("NAME")} title={t("TITLE")} />
+          <Heading name={t("NAME")} title={t("TITLE")} direction="right" />
           <div className="flex items-center gap-4 lg:gap-12 mt-12 lg:mt-14">
-            <div className="flex flex-col gap-2">
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.6, duration: 0.5 }}
+              className="flex flex-col gap-2"
+            >
               {controls.map((control) => (
                 <Button
                   onClick={control.onClick}
                   key={control.name}
-                  className="flex items-center justify-center w-12 h-12 rounded-full bg-primary"
+                  className="hover:scale-105 flex items-center justify-center w-12 h-12 rounded-full bg-primary"
                 >
                   {control.icon}
                 </Button>
               ))}
-            </div>
-            <div className="flex flex-col gap-4">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6, duration: 0.5 }}
+              className="flex flex-col gap-4"
+            >
               <p className="font-subHeading">{padZero(activeSlide + 1)}</p>
               <p className="text-xl font-subHeading">{activeAbout.title}</p>
               <p className="text-[#3333337F]">{activeAbout.description}</p>
               <div className="flex flex-col gap-4">{inactiveAbout}</div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

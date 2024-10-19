@@ -4,6 +4,7 @@ import { PlayIcon } from "../icons";
 import Heading from "../shared/heading";
 import { useTranslations } from "next-intl";
 import { PauseIcon } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function OurStory() {
   const t = useTranslations("STORY_SECTION");
@@ -39,17 +40,24 @@ export default function OurStory() {
               />
               Your browser does not support the video tag.
             </video>
-            <button
+            <motion.button
+              initial={{ opacity: 0, scale: 0 }}
+              whileHover={{
+                scale: 1.1,
+              }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              whileTap={{ scale: 0.9 }}
               onClick={handleClick}
-              className="absolute top-[100%] lg:top-[74%] -right-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 rounded-full bg-white flex items-center justify-center text-[#F5AE5C]"
+              className="absolute top-[65%] lg:top-[58%] -right-1/4 -translate-x-1/2 -translate-y-1/2 w-40 h-40 rounded-full bg-white flex items-center justify-center text-[#F5AE5C]"
             >
               {isPlaying ? <PauseIcon /> : <PlayIcon />}
-            </button>
+            </motion.button>
           </div>
         </div>
 
         <div className="self-end">
-          <Heading name={t("NAME")} title={t("TITLE")} />
+          <Heading name={t("NAME")} title={t("TITLE")} direction="up" />
         </div>
       </div>
     </section>

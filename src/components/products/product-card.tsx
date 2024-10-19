@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import * as motion from "framer-motion/client";
 
 interface ProductCardProps {
   product: TProduct;
@@ -8,8 +9,19 @@ interface ProductCardProps {
 export default function ProductCard({ product, index }: ProductCardProps) {
   const isFirst = index === 0;
   const info = product.info ?? [];
+  const item = {
+    hidden: { y: 200, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
   return (
-    <div
+    <motion.div
+      variants={item}
+      initial="hidden"
+      whileInView="visible"
+      transition={{ duration: 0.5, delay: isFirst ? 0.5 : 0.2 * index }}
       className={cn("image_gradient relative flex flex-col", {
         "md:col-span-2 min-h-[348px]": isFirst,
       })}
@@ -73,6 +85,6 @@ export default function ProductCard({ product, index }: ProductCardProps) {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
