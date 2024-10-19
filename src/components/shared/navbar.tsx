@@ -36,7 +36,7 @@ export default function Navbar() {
           </Link>
           <nav
             className={cn(
-              "absolute inset-0 min-h-screen translate-x-[-120%] bg-primary transition-transform ease-in-out lg:static lg:inset-auto lg:translate-x-0 lg:bg-transparent px-4 lg:px-0",
+              "absolute inset-0 h-screen lg:h-auto translate-x-[-120%] bg-primary transition-transform ease-in-out lg:static lg:inset-auto lg:translate-x-0 lg:bg-transparent px-4 lg:px-0",
               {
                 "translate-x-0": showNav,
               }
