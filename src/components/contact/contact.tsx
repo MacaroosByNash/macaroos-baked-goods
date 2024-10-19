@@ -45,7 +45,7 @@ export default function Contact() {
                   <textarea
                     name={field.name}
                     id={field.name}
-                    className="h-[180px] bg-transparent font-subHeading text-primary py-2 text-left border-b-2 outline-none border-b-input resize-none focus:border-border"
+                    className="h-[180px] font-light bg-transparent font-subHeading text-primary py-2 text-left border-b-2 outline-none border-b-input resize-none focus:border-border text-2xl"
                     placeholder={field.placeholder}
                   />
                 ) : (
@@ -53,7 +53,7 @@ export default function Contact() {
                     type={field.type}
                     id={field.name}
                     placeholder={field.placeholder}
-                    className="bg-transparent border-b-2 font-subHeading text-left text-primary border-b-input py-2 outline-none focus:border-border"
+                    className="bg-transparent border-b-2 font-light font-subHeading text-left text-primary border-b-input py-2 outline-none focus:border-border text-2xl"
                   />
                 )}
               </fieldset>

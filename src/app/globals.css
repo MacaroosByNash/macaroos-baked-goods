@@ -220,3 +220,9 @@ input[type="number"] {
     rgba(0, 0, 0, 0.5) 72%
   );
 }
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  color: #b79f83 !important;
+}

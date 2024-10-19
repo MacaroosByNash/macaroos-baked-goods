@@ -33,7 +33,7 @@ const Ultra = localFont({
 const Oswald = localFont({
   src: "./fonts/Oswald-VariableFont_wght.ttf",
   variable: "--font-oswald",
-  weight: "400 700",
+  weight: "300 400 700",
 });
 
 export const metadata: Metadata = {
