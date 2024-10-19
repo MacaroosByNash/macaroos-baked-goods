@@ -125,7 +125,7 @@ input[type="number"] {
 
 @media (min-width: 1280px) {
   .story_section {
-    background-position: 7% 14%, 103% -26%, 54% 134%;
+    background-position: 7% 14%, 103% -33%, 54% 134%;
   }
 }
 
@@ -163,6 +163,13 @@ input[type="number"] {
   background-position: 64% 156%, 44% -44%, 9% 11%, 24% -2%, 97% 8%, 23% 18%;
 }
 
+@media (min-width: 1280px) {
+  .home_hero_section {
+    background-size: auto, auto, auto, 25%, auto, auto;
+    background-position: 115% 50%, 53% 112%, 58% 12%, 68% -6%, 83% 16%, 66% 30%;
+  }
+}
+
 .products_page {
   background-image: url("../assets/images/blob-line-nine.png"),
     url("../assets/images/blob-two.png"),
@@ -171,13 +178,6 @@ input[type="number"] {
     url("../assets/images/blob-line-one.png");
   background-repeat: no-repeat;
   background-position: 64% 23%, 53% 68%, 9% 23%, 97% 61%, 27% 86%;
-}
-
-@media (min-width: 1280px) {
-  .home_hero_section {
-    background-size: auto, auto, auto, auto, auto, auto;
-    background-position: 112% 50%, 53% 112%, 55% 12%, 64% 0%, 83% 16%, 66% 30%;
-  }
 }
 
 .swiper {

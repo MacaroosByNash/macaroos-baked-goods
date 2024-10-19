@@ -98,6 +98,10 @@ function useNavbar() {
   }, []);
   const navLinks = [
     {
+      title: t("HOME"),
+      href: "/",
+    },
+    {
       title: t("ABOUT"),
       href: "#about",
     },
@@ -106,7 +110,7 @@ function useNavbar() {
       href: "/products",
     },
     {
-      title: t("RECIPES"),
+      title: t("CONTACT"),
       href: "#",
     },
   ];

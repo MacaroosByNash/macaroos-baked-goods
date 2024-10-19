@@ -7,9 +7,9 @@ import useSlidesPerVIew from "@/hooks/useSlidesPerView";
 import { SwiperSlide } from "swiper/react";
 import { cn } from "@/lib/utils";
 import FeaturesCard from "./features-card";
-import fresh from "@/assets/icons/fresh.png";
-import natural from "@/assets/icons/natural.png";
-import tasty from "@/assets/icons/tasty.png";
+import fresh from "@/assets/icons/fresh.webp";
+import natural from "@/assets/icons/natural.webp";
+import tasty from "@/assets/icons/tasty.webp";
 
 export default function Features() {
   const { t, features } = useFeatures();
