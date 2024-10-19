@@ -12,11 +12,19 @@ import fillingCake from "@/assets/images/filling-cake.webp";
 import Image from "next/image";
 
 export default function About() {
-  const { t, about, controls, activeSlide } = useAbout();
+  const { t, about, controls, activeSlide, setActiveSlide } = useAbout();
   const activeAbout = about[activeSlide];
   const inactiveAbout = about
     .filter((info) => info.title !== activeAbout.title)
-    .map((info) => <p key={info.title}>{info.title}</p>);
+    .map((info) => (
+      <button
+        key={info.title}
+        onClick={() => setActiveSlide(about.indexOf(info))}
+        className="text-left"
+      >
+        {info.title}
+      </button>
+    ));
 
   return (
     <section
@@ -111,5 +119,6 @@ function useAbout() {
     about,
     controls,
     activeSlide,
+    setActiveSlide,
   };
 }
