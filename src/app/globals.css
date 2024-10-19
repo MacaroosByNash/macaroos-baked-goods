@@ -148,7 +148,7 @@ input[type="number"] {
 .navbar_section {
   background-image: url("../assets/images/blob-line-one.png");
   background-repeat: no-repeat;
-  background-position: 65% 152%;
+  background-position: 65% 167%;
 }
 
 .home_hero_section {
@@ -166,7 +166,7 @@ input[type="number"] {
 @media (min-width: 1280px) {
   .home_hero_section {
     background-size: auto, auto, auto, 25%, auto, auto;
-    background-position: 115% 50%, 53% 112%, 58% 12%, 68% -6%, 83% 16%, 66% 30%;
+    background-position: 113% 50%, 53% 112%, 58% 12%, 68% -6%, 83% 16%, 66% 30%;
   }
 }
 
