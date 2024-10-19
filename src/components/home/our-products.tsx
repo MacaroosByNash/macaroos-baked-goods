@@ -1,8 +1,8 @@
 import Heading from "../shared/heading";
 import Products from "../products/products";
 import { useTranslations } from "next-intl";
-import { Button } from "../ui/button";
 import useProducts from "@/hooks/useProducts";
+import Link from "next/link";
 
 export default function OurProducts() {
   const t = useTranslations("OUR_PRODUCTS_SECTION");
@@ -15,9 +15,12 @@ export default function OurProducts() {
           <Heading name={t("NAME")} title={t("TITLE")} />
         </div>
         <Products products={products.slice(0, 5)} />
-        <Button className="text-white w-[170px] h-[48px] uppercase">
+        <Link
+          href="/products"
+          className="text-white w-[170px] h-[48px] uppercase bg-primary flex items-center justify-center text-center"
+        >
           {t("BUTTON")}
-        </Button>
+        </Link>
       </div>
     </section>
   );

@@ -21,7 +21,7 @@ export default function ProductsScreen() {
         <div className="w-full">
           <Heading name={t("NAME")} title={t("TITLE")} />
         </div>
-        <Products products={products.slice(0, 5)} />
+        <Products products={products} />
       </div>
     </section>
   );
