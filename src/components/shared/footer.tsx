@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Facebook, InstagramO, Twitter } from "../icons";
 
 export default function Footer() {
-  const { menu, service, social, t } = useFooter();
+  const { menu, service, social, t, termsAndPrivacy } = useFooter();
   return (
     <footer className="footer bg-foreground text-white flex items-center justify-center pt-6 lg:pt-16 pb-20 lg:pb-8 px-4 md:px-8">
       <div className="container flex flex-col gap-16">
@@ -27,8 +27,8 @@ export default function Footer() {
               <ul className="flex items-center lg:items-start flex-col gap-4">
                 {menu.menu.map((item, index) => (
                   <li key={index}>
-                    <Link href="/" className="text-center lg:text-left">
-                      {item}
+                    <Link href={item.href} className="text-center lg:text-left">
+                      {item.title}
                     </Link>
                   </li>
                 ))}
@@ -57,9 +57,9 @@ export default function Footer() {
             {t("COPYRIGHT")}
           </p>
           <ul className="flex items-center justify-between lg:justify-start gap-20">
-            {[t("TERMS"), t("PRIVACY")].map((item, index) => (
+            {termsAndPrivacy.map((item, index) => (
               <li key={index}>
-                <Link href="/">{item}</Link>
+                <Link href={item.href}>{item.title}</Link>
               </li>
             ))}
           </ul>
@@ -74,19 +74,43 @@ function useFooter() {
   const menu = {
     name: t("MENU_SECTION.NAME"),
     menu: [
-      t("MENU_SECTION.MENU.ABOUT"),
-      t("MENU_SECTION.MENU.PRODUCTS"),
-      t("MENU_SECTION.MENU.RECIPES"),
-      t("MENU_SECTION.MENU.CONTACT"),
+      {
+        href: "#about",
+        title: t("MENU_SECTION.MENU.ABOUT"),
+      },
+      {
+        href: "/products",
+        title: t("MENU_SECTION.MENU.PRODUCTS"),
+      },
+      {
+        href: "#",
+        title: t("MENU_SECTION.MENU.RECIPES"),
+      },
+      {
+        href: "#contact",
+        title: t("MENU_SECTION.MENU.CONTACT"),
+      },
     ],
   };
   const service = {
     name: t("SERVICES_SECTION.NAME"),
     menu: [
-      t("SERVICES_SECTION.SERVICES.BAKERY"),
-      t("SERVICES_SECTION.SERVICES.DELIVERY"),
-      t("SERVICES_SECTION.SERVICES.CATERING"),
-      t("SERVICES_SECTION.SERVICES.CORPORATE"),
+      {
+        href: "#",
+        title: t("SERVICES_SECTION.SERVICES.BAKERY"),
+      },
+      {
+        href: "#",
+        title: t("SERVICES_SECTION.SERVICES.DELIVERY"),
+      },
+      {
+        href: "#",
+        title: t("SERVICES_SECTION.SERVICES.CATERING"),
+      },
+      {
+        href: "#",
+        title: t("SERVICES_SECTION.SERVICES.CORPORATE"),
+      },
     ],
   };
   const social = {
@@ -106,5 +130,15 @@ function useFooter() {
       },
     ],
   };
-  return { menu, service, social, t };
+  const termsAndPrivacy = [
+    {
+      href: "#",
+      title: t("TERMS"),
+    },
+    {
+      href: "#",
+      title: t("PRIVACY"),
+    },
+  ];
+  return { menu, service, social, t, termsAndPrivacy };
 }

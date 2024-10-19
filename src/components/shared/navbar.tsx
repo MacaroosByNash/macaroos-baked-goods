@@ -58,7 +58,7 @@ export default function Navbar() {
         </div>
 
         <Link
-          href="/contact"
+          href="#"
           className="hidden lg:inline-block uppercase border border-[#FFFFFF4B] px-10 py-3"
         >
           {t("CONTACT")}
@@ -99,7 +99,7 @@ function useNavbar() {
   const navLinks = [
     {
       title: t("ABOUT"),
-      href: "/about",
+      href: "#",
     },
     {
       title: t("PRODUCTS"),
@@ -107,7 +107,7 @@ function useNavbar() {
     },
     {
       title: t("RECIPES"),
-      href: "/recipes",
+      href: "#",
     },
   ];
   return {

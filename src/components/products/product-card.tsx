@@ -34,7 +34,7 @@ export default function ProductCard({ product, index }: ProductCardProps) {
             "flex-col": isFirst,
           })}
         >
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col">
             <p
               className={cn("text-xl font-subHeading leading-[48px]", {
                 "font-heading text-[40px] leading-[48px]": isFirst,
