@@ -8,7 +8,7 @@ export default function Hero() {
   const t = useTranslations("HOME_HERO");
   return (
     <section className="relative home_hero_section bg-primary flex flex-col items-center justify-center py-32 lg:py-36 px-4 md:px-8">
-      <div className="container flex flex-col-reverse lg:flex-row gap-8 lg:gap-[260px] text-white">
+      <div className="container flex flex-col-reverse lg:flex-row gap-8 xl:gap-[260px] 2xl:justify-between text-white">
         <div>
           <p className="font-subHeading uppercase">{t("SUB_TITLE")}</p>
           <h1 className="flex flex-col text-[46px] lg:text-[72px] mt-5 leading-[51px] lg:leading-[80px] max-w-[473px]">
@@ -22,7 +22,7 @@ export default function Hero() {
           </h1>
           <p className="text-xl mt-10 max-w-[470px]">{t("DESCRIPTION")}</p>
         </div>
-        <div className="hero_image self-end relative">
+        <div className="hero_image self-end md:self-start relative">
           <Image
             src={owner}
             alt="hero image"

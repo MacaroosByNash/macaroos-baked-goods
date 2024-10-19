@@ -23,7 +23,7 @@ export default function OurStory() {
 
   return (
     <section className="story_section bg-primary flex items-center justify-center py-28 lg:py-40 px-4 md:px-8">
-      <div className="container h-[375px] lg:h-auto flex flex-col lg:flex-row lg:items-center justify-between text-white">
+      <div className="container h-[375px] xl:h-auto flex flex-col xl:flex-row xl:items-center justify-between text-white">
         <div className="relative flex items-center justify-center">
           <div className="absolute -bottom-[180px] lg:left-20 w-[240px] h-[324px] lg:w-[274px] lg:h-[484px] ">
             <video

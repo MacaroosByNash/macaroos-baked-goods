@@ -60,8 +60,7 @@ export default function Contact() {
             ))}
             <Button
               type="submit"
-              variant="outline"
-              className="border-[#171B1B3D] p-4 w-[170px] uppercase h-auto self-start mt-5"
+              className="border-[#171B1B3D] text-white rounded-none p-4 w-[170px] uppercase h-auto self-start mt-5"
             >
               {t("FORM.BUTTON")}
             </Button>
