@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Facebook, InstagramO, Twitter } from "../icons";
 
 export default function Footer() {
-  const { menu, service, social, t, termsAndPrivacy } = useFooter();
+  const { menu, social, t, termsAndPrivacy } = useFooter();
   return (
     <footer className="footer bg-foreground text-white flex items-center justify-center pt-6 lg:pt-16 pb-20 lg:pb-8 px-4 md:px-8">
       <div className="container flex flex-col gap-16">
@@ -18,7 +18,7 @@ export default function Footer() {
               className="w-14 h-14 lg:w-20 lg:h-20"
             />
           </Link>
-          {[menu, service].map((menu) => (
+          {[menu].map((menu) => (
             <div
               key={menu.name}
               className="flex items-center lg:items-start flex-col gap-5"
@@ -81,10 +81,6 @@ function useFooter() {
       {
         href: "/products",
         title: t("MENU_SECTION.MENU.PRODUCTS"),
-      },
-      {
-        href: "#",
-        title: t("MENU_SECTION.MENU.RECIPES"),
       },
       {
         href: "#contact",

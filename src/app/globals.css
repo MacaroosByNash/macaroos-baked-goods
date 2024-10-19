@@ -76,7 +76,7 @@ input[type="number"] {
     url("../assets/images/sprinkles-four.png");
   background-repeat: no-repeat;
   background-size: 44%, 38%;
-  background-position: 48% 125%, 140% 0%;
+  background-position: 48% 135%, 140% 0%;
 }
 
 @media (min-width: 1280px) {
