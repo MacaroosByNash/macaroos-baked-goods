@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <header
       className={cn(
-        "navbar_section header text-white top-0 z-[999] bg-foreground flex w-full justify-center transition-all duration-300 p-4 md:px-8",
+        "navbar_section header text-white top-0 z-[999] bg-foreground flex w-full justify-center transition-all duration-300 p-4 lg:p-2 md:px-8",
         {
           sticky: scrollY > 0,
           "translate-y-[-500%]":
