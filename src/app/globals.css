@@ -158,7 +158,8 @@ input[type="number"] {
 .navbar_section {
   background-image: url("../assets/images/blob-line-one.png");
   background-repeat: no-repeat;
-  background-position: 65% 167%;
+  background-size: 15%;
+  background-position: 65% 225%;
 }
 
 .home_hero_section {
