@@ -2,7 +2,7 @@
 import { useTranslations } from "next-intl";
 import Heading from "../shared/heading";
 import { CaretDown, CaretUp } from "../icons";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { padZero } from "@/lib/utils";
 import { Button } from "../ui/button";
 import macarons from "@/assets/images/macarons.webp";
@@ -105,14 +105,6 @@ function useAbout() {
       onClick: () => setActiveSlide((prev) => (prev + 1) % length),
     },
   ];
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setActiveSlide((prev) => (prev + 1) % length);
-    }, 3000);
-
-    return () => clearInterval(timer);
-  }, [length]);
 
   return {
     t,
