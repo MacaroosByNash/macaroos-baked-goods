@@ -35,14 +35,17 @@ export default function Contact() {
           >
             {formFields.map((field) => (
               <fieldset key={field.name} className="flex flex-col gap-2">
-                <label htmlFor={field.name} className="text-2xl">
+                <label
+                  htmlFor={field.name}
+                  className="text-2xl font-subHeading"
+                >
                   {field.label}
                 </label>
                 {field.type === "textarea" ? (
                   <textarea
                     name={field.name}
                     id={field.name}
-                    className="h-[180px] bg-transparent py-2 text-left italic border-b-2 outline-none border-b-input resize-none focus:border-border"
+                    className="h-[180px] bg-transparent font-subHeading text-primary py-2 text-left border-b-2 outline-none border-b-input resize-none focus:border-border"
                     placeholder={field.placeholder}
                   />
                 ) : (
@@ -50,7 +53,7 @@ export default function Contact() {
                     type={field.type}
                     id={field.name}
                     placeholder={field.placeholder}
-                    className="bg-transparent border-b-2 text-left border-b-input py-2 italic outline-none focus:border-border"
+                    className="bg-transparent border-b-2 font-subHeading text-left text-primary border-b-input py-2 outline-none focus:border-border"
                   />
                 )}
               </fieldset>
