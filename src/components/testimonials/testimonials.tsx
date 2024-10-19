@@ -5,9 +5,9 @@ import { useRef, useState } from "react";
 import { SwiperRef, SwiperSlide } from "swiper/react";
 import TestimonialCard from "./testimonial-card";
 import useSlidesPerVIew from "@/hooks/useSlidesPerView";
-import avatarOne from "@/assets/images/avatar-one.png";
-import avatarTwo from "@/assets/images/avatar-two.png";
-import avatarThree from "@/assets/images/avatar-three.png";
+import avatarOne from "@/assets/images/avatar-one.webp";
+import avatarTwo from "@/assets/images/avatar-two.webp";
+import avatarThree from "@/assets/images/avatar-three.webp";
 import MySwiper from "../shared/swiper";
 import Heading from "../shared/heading";
 

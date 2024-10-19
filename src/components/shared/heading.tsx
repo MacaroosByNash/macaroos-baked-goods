@@ -17,7 +17,7 @@ export default function Heading({ title, name, center }: HeadingProps) {
       </p>
       <h3
         className={cn(
-          "text-[40px] lg:text-[56px] max-w-[617px] leading-[48px] lg:leading-[64px]",
+          "text-[40px] lg:text-[56px] lg:max-w-[600px] leading-[48px] lg:leading-[64px]",
           {
             "text-center": center,
           }

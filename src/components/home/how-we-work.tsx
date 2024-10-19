@@ -16,7 +16,9 @@ export default function HowWeWork() {
   return (
     <section className="process_section bg-primary flex items-center justify-center py-24 lg:py-36 px-4 md:px-8">
       <div className="container flex flex-col items-center text-white overflow-hidden py-8">
-        <Heading name={t("NAME")} title={t("TITLE")} center />
+        <div className="max-w-[330px] lg:max-w-[600px]">
+          <Heading name={t("NAME")} title={t("TITLE")} center />
+        </div>
         <MySwiper setActiveSlide={setActiveSlide} slidesPerView={slidesPerView}>
           {process.map((step, index) => (
             <SwiperSlide

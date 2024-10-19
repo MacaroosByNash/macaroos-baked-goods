@@ -66,37 +66,41 @@ html {
   }
 }
 
-.footer {
-  background-image: url("../assets/images/blob-line-three.png"),
-    url("../assets/images/sprinkles-five.png");
-  background-repeat: no-repeat;
-  background-position: 59% 132%, 140% 0%;
-}
-
-@media (min-width: 1280px) {
-  .footer {
-    background-position: 55% 215%, 107% 0%;
-  }
-}
-
 input[type="number"] {
   appearance: none;
   -moz-appearance: textfield;
 }
 
+.footer {
+  background-image: url("../assets/images/blob-line-three.png"),
+    url("../assets/images/sprinkles-four.png");
+  background-repeat: no-repeat;
+  background-size: 44%, 38%;
+  background-position: 48% 125%, 140% 0%;
+}
+
+@media (min-width: 1280px) {
+  .footer {
+    background-position: 55% 215%, 107% 0%;
+    background-size: 13%, 9%;
+  }
+}
+
 .contact__section {
-  background-image: url("../assets/images/sprinkles-four.png"),
+  background-image: url("../assets/images/sprinkles-two.png"),
     url("../assets/images/blob-two.png"),
     url("../assets/images/blob-line-nine.png");
   background-repeat: no-repeat;
+  background-size: 24%, 74%, 67%;
   background-position: 100% 8%, 100% 9%, 38% 5%;
 }
 
 @media (min-width: 1280px) {
   .contact__section {
     background-image: url("../assets/images/blob-line-nine.png"),
-      url("../assets/images/sprinkles-four.png"),
+      url("../assets/images/sprinkles-two.png"),
       url("../assets/images/blob-two.png");
+    background-size: 19%, 9%, 36%;
     background-position: 19% 13%, 39% 21%, 15% 35%;
   }
 }
@@ -106,12 +110,14 @@ input[type="number"] {
     url("../assets/images/blob-line-seven.png"),
     url("../assets/images/blob-line-eight.png");
   background-repeat: no-repeat;
-  background-position: 111% 114%, -7% -36%, 144% 124%;
+  background-size: 43%, 79%, 81%;
+  background-position: 111% 110%, -61% -36%, 246% 119%;
 }
 
 @media (min-width: 1280px) {
   .process_section {
-    background-position: 104% 83%, -6% 32%, 112% 85%;
+    background-size: 8%, 15%, 18%;
+    background-position: 103% 82%, -3% 35%, 109% 85%;
   }
 }
 
@@ -120,11 +126,13 @@ input[type="number"] {
     url("../assets/images/blob-line-five.png"),
     url("../assets/images/blob-line-six.png");
   background-repeat: no-repeat;
-  background-position: 2% 13%, 170% -20%, 36% 126%;
+  background-size: 28%, 73%, 70%;
+  background-position: 8% 13%, 170% -20%, 36% 126%;
 }
 
 @media (min-width: 1280px) {
   .story_section {
+    background-size: 8%, 20%, 19%;
     background-position: 7% 14%, 103% -33%, 54% 134%;
   }
 }
@@ -133,7 +141,8 @@ input[type="number"] {
   background-image: url("../assets/images/sprinkles-two.png"),
     url("../assets/images/blob-two.png");
   background-repeat: no-repeat;
-  background-position: 94% 5%, 10% 71%;
+  background-size: 24%, 98%;
+  background-position: 82% 9%, 11% 48%;
 }
 
 @media (min-width: 1280px) {
@@ -141,6 +150,7 @@ input[type="number"] {
     background-image: url("../assets/images/sprinkles-two.png"),
       url("../assets/images/blob-two.png");
     background-repeat: no-repeat;
+    background-size: 24%, 74%;
     background-position: 83% 5%, 89% 98%;
   }
 }
@@ -160,24 +170,25 @@ input[type="number"] {
     url("../assets/images/blob-one.png");
   background-repeat: no-repeat;
   background-size: 70%, 70%, 30%, 70%, 70%, 70%;
-  background-position: 64% 156%, 44% -44%, 9% 11%, 24% -2%, 97% 8%, 23% 18%;
+  background-position: 64% 156%, 44% -44%, 15% 12%, 11% 0%, 97% 7%, 23% 18%;
 }
 
 @media (min-width: 1280px) {
   .home_hero_section {
-    background-size: auto, auto, auto, 25%, auto, auto;
-    background-position: 113% 50%, 53% 112%, 58% 12%, 68% -6%, 83% 16%, 66% 30%;
+    background-size: 14%, 19%, 10%, 26%, 23%, 25%;
+    background-position: 113% 50%, 53% 112%, 58% 12%, 68% -6%, 83% 11%, 66% 30%;
   }
 }
 
 .products_page {
   background-image: url("../assets/images/blob-line-nine.png"),
     url("../assets/images/blob-two.png"),
-    url("../assets/images/sprinkles-four.png"),
+    url("../assets/images/sprinkles-two.png"),
     url("../assets/images/blob-line-three.png"),
     url("../assets/images/blob-line-one.png");
   background-repeat: no-repeat;
-  background-position: 64% 23%, 53% 68%, 9% 23%, 97% 61%, 27% 86%;
+  background-size: 24%, 26%, 8%, 16%, 18%;
+  background-position: 70% 17%, 59% 36%, 14% 16%, 97% 73%, 27% 92%;
 }
 
 .swiper {
