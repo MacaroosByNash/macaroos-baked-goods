@@ -1,6 +1,6 @@
 {
   "NAVBAR": {
-      "HOME": "Home",
+    "HOME": "Home",
     "ABOUT": "About",
     "PRODUCTS": "Products",
     "RECIPES": "Recipes",
@@ -133,7 +133,16 @@
         "LABEL": "Quantity",
         "PLACEHOLDER": "Add quantity"
       },
-      "BUTTON": "Send"
+      "BUTTON": "Send",
+      "SUMBITED": "Continue",
+      "SUCCESS": {
+        "TITLE": "Success",
+        "MESSAGE": "Thank you! You have successfuly placed your order. I will get back to you as soon as possible."
+      },
+      "ERROR": {
+        "TITLE": "ERROR",
+        "MESSAGE": "Something went wrong, Its not you! rest assured we are working on it. Please try again later."
+      }
     }
   },
   "FOOTER": {

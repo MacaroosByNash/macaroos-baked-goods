@@ -14,4 +14,16 @@ declare global {
     info?: string[];
     image: StaticImageData;
   };
+
+  type TFormValues = {
+    name: string;
+    email: string;
+    message: string;
+    date: string;
+    quantity: number;
+    access_key: string;
+    botcheck: string;
+    subject: string;
+    from_name: string;
+  };
 }

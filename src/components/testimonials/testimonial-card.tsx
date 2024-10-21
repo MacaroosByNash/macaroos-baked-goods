@@ -31,7 +31,7 @@ export default function TestimonialCard({
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="flex flex-col gap-10"
+          className="flex flex-1 flex-col gap-10"
         >
           <Rating value={+testimonial.stars} />
           <p className="font-subHeading text-2xl leading-[32px]">
@@ -39,7 +39,13 @@ export default function TestimonialCard({
           </p>
         </motion.div>
 
-        <Image src={testimonial.avatar} width={100} height={100} alt="avatar" />
+        <Image
+          src={testimonial.avatar}
+          width={100}
+          height={100}
+          alt="avatar"
+          className="w-[100px] h-[100px] rounded-full"
+        />
       </motion.div>
       <motion.p
         initial={{ opacity: 0, y: 100 }}
