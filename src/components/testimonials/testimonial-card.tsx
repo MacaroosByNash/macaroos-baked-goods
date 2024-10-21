@@ -20,6 +20,7 @@ export default function TestimonialCard({
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
+      className="flex flex-col"
     >
       <motion.div
         initial={{ opacity: 0, y: 100 }}
