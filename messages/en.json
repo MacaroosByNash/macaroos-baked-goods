@@ -22,7 +22,7 @@
       },
       "TWO": {
         "TITLE": "About Pricing",
-        "DESCRIPTION": "The pricing features both standard and specialty offerings, catering to customers with dietary restrictions such as gluten-free, nut-free, dairy free and vegan."
+        "DESCRIPTION": "The pricing features both standard and specialty offerings, catering to customers with dietary restrictions such as gluten-free, nut-free, dairy free and vegan. My grandmother is a celiac so I take my GF and allergy orders seriously"
       },
       "THREE": {
         "TITLE": "Our Flavor/Style Options",
@@ -65,7 +65,7 @@
     "STEPS": {
       "ONE": {
         "TITLE": "Contact",
-        "DESCRIPTION": "Place your order through mail, Instagram or the contact provided. "
+        "DESCRIPTION": "Go to contact and fill the form. Give full details about your order."
       },
       "TWO": {
         "TITLE": "Baking",
@@ -99,7 +99,7 @@
         "STARS": "5"
       },
       "THREE": {
-        "NAME": "Annie",
+        "NAME": "Tessa",
         "TITLE": "OMG Tara!!!",
         "DESCRIPTION": "Holly smokes that was the best party cake i’ve ever had. WOW!!! only problem is everyone is eating it and i want the left overs",
         "STARS": "5"
@@ -110,6 +110,7 @@
     "EMAIL": "tara@taranashville.com",
     "TEL": "+1-206-702-0165",
     "INSTAGRAM": "@_tara_bakes",
+    "INSTAGRAM_LINK": "https://www.instagram.com/_tara_bakes/",
     "NAME": "Get in Touch",
     "TITLE": "Connect With Me",
     "FORM": {
@@ -169,6 +170,8 @@
     },
     "COPYRIGHT": "Copyright © 2024 Macaroos. All Rights Reserved.",
     "TERMS": "Terms of Use",
+    "INSTAGRAM": "@_tara_bakes",
+    "INSTAGRAM_LINK": "https://www.instagram.com/_tara_bakes/",
     "PRIVACY": "Privacy Policy"
   },
   "PRODUCTS": {

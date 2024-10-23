@@ -5,6 +5,7 @@ import Heading from "../shared/heading";
 import { useTranslations } from "next-intl";
 import { PauseIcon } from "lucide-react";
 import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 export default function OurStory() {
   const t = useTranslations("STORY_SECTION");
@@ -34,10 +35,7 @@ export default function OurStory() {
               className="w-full h-full object-cover"
               autoPlay={false}
             >
-              <source
-                src="https://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4"
-                type="video/mp4"
-              />
+              <source src="/story.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <motion.button
@@ -49,7 +47,12 @@ export default function OurStory() {
               transition={{ duration: 0.5 }}
               whileTap={{ scale: 0.9 }}
               onClick={handleClick}
-              className="absolute top-[65%] lg:top-[58%] -right-1/4 -translate-x-1/2 -translate-y-1/2 w-40 h-40 rounded-full bg-white flex items-center justify-center text-[#F5AE5C]"
+              className={cn(
+                "absolute top-[65%] lg:top-[58%] -right-1/4 -translate-x-1/2 -translate-y-1/2 w-40 h-40 rounded-full bg-white flex items-center justify-center text-[#F5AE5C]",
+                {
+                  "w-16 h-16 lg:top-[68%] -right-[10%]": isPlaying,
+                }
+              )}
             >
               {isPlaying ? <PauseIcon /> : <PlayIcon />}
             </motion.button>
