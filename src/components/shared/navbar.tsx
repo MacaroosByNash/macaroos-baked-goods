@@ -53,6 +53,7 @@ export default function Navbar() {
                 >
                   <Link
                     href={link.href}
+                    onClick={() => setShowNav(false)}
                     className="text-secondary lg:text-white font-heading lg:font-subHeading text-2xl lg:text-base"
                   >
                     {link.title}
@@ -117,7 +118,7 @@ function useNavbar() {
     },
     {
       title: t("CONTACT"),
-      href: "#",
+      href: "#contact",
     },
   ];
   return {
