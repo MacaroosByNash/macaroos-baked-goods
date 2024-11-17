@@ -24,7 +24,7 @@ export default function useSlidesPerVIew(slides: number) {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [slides]);
 
   return slidesPerView;
 }

@@ -41,7 +41,7 @@ export default function Footer() {
               {social.menu.map((item, index) => (
                 <li key={index}>
                   <Link
-                    href="/"
+                    href={item.href}
                     className="w-12 h-12 rounded-full flex items-center justify-center bg-secondary"
                   >
                     {item.icon}
@@ -121,7 +121,7 @@ function useFooter() {
         icon: <Twitter />,
       },
       {
-        href: "#",
+        href: t("INSTAGRAM_LINK"),
         icon: <InstagramO />,
       },
     ],

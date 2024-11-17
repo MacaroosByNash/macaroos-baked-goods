@@ -74,7 +74,7 @@ export default function useProducts() {
     {
       name: t("EIGHT.NAME"),
       title: t("EIGHT.TITLE"),
-      description: t("EIGHT.DESCRIPTION", { amount: 24 }),
+      description: t("EIGHT.DESCRIPTION", { minOrder: 24 }),
       price: t("EIGHT.PRICE", {
         price: 56,
       }),

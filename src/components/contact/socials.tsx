@@ -51,7 +51,7 @@ function useSocails() {
     },
     {
       icon: <Instagram />,
-      href: "https://www.instagram.com/" + t("INSTAGRAM"),
+      href: t("INSTAGRAM_LINK"),
       title: t("INSTAGRAM"),
       name: "instagram",
     },
