@@ -35,8 +35,6 @@ export default function Contact() {
   }, [userName, setValue]);
 
   const onSubmit = async (data: TFormValues) => {
-    console.log("sending");
-
     await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: {
@@ -62,7 +60,6 @@ export default function Contact() {
         console.log(error);
       });
   };
-  console.log(errors);
 
   return (
     <section
@@ -98,11 +95,6 @@ export default function Contact() {
               onSubmit={handleSubmit(onSubmit)}
             >
               <input
-                type="hidden"
-                {...register("access_key")}
-                value="04f9758b-03fb-494a-88fe-788983b55192"
-              />
-              <input
                 type="checkbox"
                 {...register("botcheck")}
                 className="hidden"
@@ -110,7 +102,10 @@ export default function Contact() {
               />
               <input
                 type="hidden"
-                value={process.env.NEXT_PUBLIC_FORM_KEY}
+                value={
+                  process.env.NEXT_PUBLIC_FORM_KEY ??
+                  "9c85ae58-3927-40a4-90e5-9ca408cb0422"
+                }
                 {...register("access_key")}
               />
               <input type="hidden" {...register("subject")} />
